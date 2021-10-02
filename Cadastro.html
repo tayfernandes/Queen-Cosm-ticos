@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> QUEEN Cosméticos </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+        <link href="css/estilo.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+
+                <div class="header-background"></div>
+
+            <section id="logo-menu">
+                <h1>
+                    <a href="" title=" QUEEN Cosméticos: "> <img src="imagens/logo.png" alt="Logo da empresa"> </a>
+                </h1>
+            </section>
+
+            <section id="texto-logo">
+                <h1> QUEEN Cosméticos</h1>
+                <p>Os Perfumes da Sedução</p>
+
+            </section>
+
+            <nav id="menu"> <ul>
+                <li> <a class="atual" title="Página inicial" href="index.html"> Home </a> </li>
+                <li> <a title="Veja o nossos Produtos" href="promocao.html"> Promoção </a> </li>
+                <li> <a title="Se Cadastre" href="cadatro.html"> Cadastre-se no Site </a> </li>
+                </ul> 
+            </nav>
+         
+        </header>
+
+        <main>
+            
+            <section class="conteudo-paginas">
+                <div class="container">
+                    
+                    <h2 class="section-titulo"> <span> Cadastre-se</span> </h2>
+                    <form action="#" method="GET"> <div class="campo-formulario">
+
+                    <label>
+                        Nome:
+                        <input type="text" name="nome" placeholder="Digite o seu nome"> 
+                    </label>
+                
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email"> Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email ">
+                </div>
+
+                <div class="campo-formulario">
+                    <label>
+                        Data de Nascimento:
+                        <input type="date" name="datanascimento">
+                    </label>
+
+                </div>
+
+                <div class="campo-formulario">
+                    <fieldset>
+
+                          <legend> Sexo: </legend>
+                        <label>
+                           <input type="radio" name="sexo" value="M">
+                            Masculino
+                        </label>
+
+                        <label>
+                            <input type="radio" name="sexo" value="F">
+                            Feminino
+                        </label>
+
+                    </fieldset>
+
+                </div>
+
+                <div class="campo-formulario">
+                    <label>
+                         Bairro:
+                        <select name="bairro">
+                            <option selected></option>
+                            <option value="Urbis"> Urbis</option> <option value="olhos d'água"> Olhos d'Água</option> <option value="Flores">Flores</option> <option value="Centro"> Centro</option>
+                        </select>
+                     </label>
+                </div>
+
+                <div class="campo-formulario">
+                    <label> 
+                        Mensagem:
+                        <textarea name="mensagem"></textarea> 
+                    </label>
+                </div>
+
+                <div class="campo-formulario">
+                    <label>
+                        Voçê aceita receber a nossos emails com mais explicações? <input type="checkbox" name="esplicacoes" value="sim" checked>
+                    </label>
+
+                </div>
+                    <div class="btn-formulario">
+                      <button type="submit">Enviar</button>
+                      <button type="reset">Apagar o formulário</button> 
+                    </div>
+                </form>
+
+            </section>
+
+        </main>
+
+
+
+        <footer>
+
+            <div class="container-informacao">
+
+                <div class="entrega">
+                  <h3>Entrega</h3>
+                  <p>Rapidez, Segurança e Qualidade,<br> é o nosso lema para a entrega,<br> dos nossos queridos perfumes. <br>Entregamos para o mundo todo.</p>
+                </div>
+
+                <div class="Contato">
+                  <h3>Contato</h3>
+                  <img  src="imagens/imagem instagran.png" alt="Instagram">
+                  <a href="#" title="Instagram"> Instagram </a>  
+                  <br><img  src="imagens/imagem whatsapp.png" alt="whatsapp">
+                  <a href="#" title="Whatsapp"> Whatsapp  </a>
+                </div>
+
+                <div class="formas-de-pagamento">
+                  <h3>Formas de Pagamento </h3>
+                  <img  src="imagens/imagem pagamento.png" alt="pagamento">
+                </div>
+
+           </div>
+
+        </footer>
+
+
+    </body>
+</html>
