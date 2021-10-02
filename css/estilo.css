@@ -1,0 +1,199 @@
+*,
+*::after,
+*::before{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --cor-rosa:#FF1493;
+    --cor-roxo: #A020F0;
+    --cor-vinho:#780643;
+    --cor-rosa-claro:#FFB3C1;
+    --cor-rosa-clarinho:#FFCCD5;
+    --cor-azul:#48CAE4;
+    --cor-azul-claro:#90E0EF;
+    --cor-cinza:#E5E5E5;
+    --cor-cinza-escuro:#D3D1D1;
+    --cor-branco:#FFFFFF;
+    --cor-fonte:#000000;
+    --fonte:'Cinzel Decorative','Roboto','Cinzel',sans-serif;
+}
+
+html{
+    font-size:62.5%; /*10px*/
+}
+
+body{
+    font-family: var(--fonte);
+    color:var(--cor-fonte);
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1140px;
+    width:85%;
+    margin:0 auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:1px;
+    min-height: 190px;
+    background: linear-gradient(183.75deg, #FF1493 56.15%, rgba(160, 32, 240, 0) 99.41%);
+    height:260px;
+    position: relative;
+    z-index:0;
+}
+
+.header-background{
+    border-top:260px solid #FFFF;
+    border-right:100px solid transparent;
+    width:45%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+#pesquisa{
+    text-align:center;
+}
+
+#mais-vendidos{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    text-align:center;
+    border-top: 0.1rem inset var(--cor-fonte);
+}
+
+#barra{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 110px;
+    padding-left: 110px;
+}
+
+#promocao{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    text-align:center ;
+    border-top: 0.1rem inset var(--cor-fonte);
+}
+
+#segundabarra{
+    text-align:center
+}
+
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+#texto-logo{
+    text-align: center;
+}
+
+#menu > ul > li{
+    display: inline;
+    padding:5px;
+    font-family:'Cinzel';
+} 
+
+header .logo-alt{
+    display: none;
+}
+
+header .menu-pricipal{
+    width:50%;
+}
+
+header .menu-pricipal > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style:none;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+}
+
+header .menu-pricipal a{
+    color: var(--cor-fonte);
+    text-decoration: none;
+    font-size:700px;
+    padding:.5rem;
+}
+
+header .menu-pricipal a:hover,
+header .menu-pricipal a.atual
+{
+    color: var(--cor-vinho);
+    border: bottom 0.7rem solid var(--cor-vinho);
+}
+
+
+header .logo-menu{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-columns: 150px 1fr;
+    grid-template-areas: "imagem titulo"
+                          "imagem texto";
+}
+
+header .banner-texto{
+    grid-area: subtitulo;
+    font-size:1rem;
+    text-align: center;
+
+}
+
+
+header .banner-pesquisa{
+    grid-area: imagem;
+}
+
+header .banner-texto > p{
+    font-size: 2.0rem;
+    line-height: 120%;
+    margin: 2rem 1rem 5rem;
+}
+
+
+.btn:hover{
+    background-color: var(--cor-vinho);
+    box-shadow: 0 4px 1px #490429;
+}
+
+#empresa{
+    text-align: center;
+    border-top: 0.1rem inset var(--cor-fonte);
+}
+
+.container-informacao{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+    text-align:center ;
+    border-top: 0.1rem inset var(--cor-fonte);
+}
+
+.conteudo-paginas{
+    border-top: 1.5rem solid var(--cor-fonte);
+    min-height: 300px;
+    font-family:'Roboto';
+}
+
+.conteudo-paginas form{
+    padding:2rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
